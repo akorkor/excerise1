@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+
+<div id="bigBx">
+  <div id="userPostName">
+    <%= link_to @post.title, user_post_path(@user, @post) %>
+   </div>
+  <div id="postInfo">
+    <%= @post.content %>
+  </div>
+  <div id="postFunc">
+    <% if session[:user_id] %>
+      <%= link_to 'Edit', edit_user_post_path(@user, @post)  %>
+      <%= link_to 'Delete', user_post_path(@user, @post),
+       method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
+  </div>
+</div>
+
+
+<%= link_to 'Edit', edit_user_post_path(@user, @post) %> |

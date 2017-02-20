@@ -1,0 +1,91 @@
+/* ======= ======= ======= general ======= ======= ======= */
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ariel", sans-serif;
+/*  border: 2px solid cadetblue; */
+}
+
+/* ======= ======= =======  sections  ======= ======= ======= */
+#header {
+  background-color: ghostwhite;
+  height: 100px;
+}
+#yield {
+  background: aliceblue;
+  height: 1500px;
+}
+#footer {
+  background-color: #ddd;
+}
+.section {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid purple;
+}
+/* ======= ======= =======  content  ======= ======= ======= */
+#menuBtn{
+  border: 1px solid;
+  height: 20px;
+  width: 70px;
+  float: left;
+}
+#content {
+  border: 2px solid darkorange;
+}
+#user-table, th, td {
+  text-align: left;
+  border: 1px solid darkorange;
+  border-collapse: collapse;
+}
+#user-table th, #user-table td {
+  padding: 10px;
+}
+#user-table {
+  background-color: seashell;
+  width: 100%;
+}
+#user-table > tr > #user {
+  width: 50%;
+}
+#user-table > tr > #edit {
+  width: 20%;
+}
+#user-table > tr > #delete {
+  width: 20%;
+}
+#userPost{
+  background-color: lightyellow;
+}
+#bigBx{
+  border: 1px solid;
+  height:260px;
+  width: 100%;
+}
+#userPostName{
+  background-color: ghostwhite;
+  border: 1px solid;
+  height:30px;
+  width: 20%;
+}
+#postInfo{
+  border: 1px solid;
+  height:180px;
+  width: 100%;
+}
+#postFunc{
+  background-color: ghostwhite;
+  border: 1px solid;
+  height:30px;
+  width: 100%;
+}
+#postFunc > a {
+  float: right;
+  margin: 5px;
+}
+
+/* ======= ======= ======= ARCHIVE ======= ======= ======= */
+/* ======= ======= ======= ARCHIVE ======= ======= ======= */
+/* ======= ======= ======= ARCHIVE ======= ======= ======= */

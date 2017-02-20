@@ -1,0 +1,30 @@
+<%= form_for @address, url: {action: "create"} do |f| %>
+
+
+  <% puts "** @user_id.inspect: #{@user_id.inspect}" %>
+  <% puts "\n******* form *******" %>
+  <% puts "** @address.inspect: #{@address.inspect}" %>
+
+  <% if address.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(address.errors.count, "error") %> prohibited this address from being saved:</h2>
+
+      <ul>
+      <% address.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <p><%= f.text_field :user %><%= label(:user, "user") %></p>
+    <p><%= f.text_field :street %><%= label(:street, "street") %></p>
+    <p><%= f.text_field :city %><%= label(:city, "city") %></p>
+    <p><%= f.text_field :state %><%= label(:state, "state") %></p>
+    <p><%= f.text_field :zip %><%= label(:zip, "zip") %></p>
+    <p><%= f.hidden_field :user_id, :value => @user_id %></p>
+    <p><%= f.submit %></p>
+  </div>
+
+<% end %>

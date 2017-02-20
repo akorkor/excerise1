@@ -1,0 +1,9 @@
+<h1>Menu</h1>
+
+
+<div id="menuBtn"><%= link_to ' Home','/home' %></div>
+
+<% if session[:user_id] %>
+  <div id="menuBtn"><%= link_to 'All Users', users_path %></div>
+  <div id="menuBtn"><%= link_to ' Signout','/signout' %></div>
+<% end %>
